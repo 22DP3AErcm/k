@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #595959;
+}
+
+.calculator {
+    background-color: #8e8a8a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.buttons-container {
+    width: 100%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #4e4d4d;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #7a7979;
+}
+
+.history {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.history h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#historyList {
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#historyList li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+
+#historyList li button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
