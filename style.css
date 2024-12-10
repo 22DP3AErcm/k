@@ -68,6 +68,7 @@ button:hover {
     padding: 0;
     max-height: 150px;
     overflow-y: auto;
+    overflow-x: auto;
     width: 100%;
 }
 
@@ -89,4 +90,12 @@ button:hover {
     cursor: pointer;
     border-radius: 5px;
     flex-shrink: 0;
+}
+
+#rezultats {
+    background-color: #b2dda9 ;
+}
+
+#AC{
+    background-color: #c75050;
 }

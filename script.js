@@ -73,5 +73,7 @@ document.addEventListener('keydown', function(event) {
         display.value = display.value.slice(0, -1); // Dzēš pēdējo rakstzīmi no displeja
     } else if (key === 'Escape') {
         clearDisplay(); // Notīra displeju
+    } else if (key === '.') {
+        appendToDisplay(key); // Pievieno decimālpunktu displejam
     }
 });
